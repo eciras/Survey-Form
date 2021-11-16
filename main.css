@@ -1,0 +1,143 @@
+body {
+    font-family: "Zen Kaku Gothic Antique";
+    background-color: #f6be11;
+    font-size: 1.2rem;
+}
+
+#main {
+    padding-left: 1rem;
+}
+
+#title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-top: 1rem;
+    padding-right: 1rem;
+
+}
+
+.image-area {
+
+    border: 20px solid rgb(241, 241, 241);
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+
+}
+
+#part-two {
+    grid-column: auto / span 2;
+}
+
+button {
+    background-color: rgb(235, 235, 235);
+    border-radius: 2px;
+    border: 2px solid #868686;
+    width: 60px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: #d3d3d3;
+    color: black;
+    border: 2px solid #000000;
+}
+
+.text-inbox {
+    border: 1px solid rgb(121, 121, 121);
+}
+
+label {
+    display: table-cell;
+
+}
+
+input {
+    display: table-cell;
+    margin-bottom: 5px;
+}
+
+.era-label {
+    padding-right: 15px;
+}
+
+.brand-label {
+    padding-right: 15px;
+}
+
+.info-blocks {
+    padding-bottom: 2rem;
+}
+
+.form-title {
+
+    padding-bottom: 2rem;
+}
+
+fieldset {
+    border: 1px groove black;
+    padding: 5px;
+
+}
+
+.fields {
+    border: 1px solid rgb(121, 121, 121);
+    margin-left: 2rem;
+}
+
+.container-grid p {
+    display: table-row;
+}
+
+.radio-inline {
+    padding-right: 115px;
+}
+
+.key-tags {
+    padding-bottom: 15rem;
+}
+
+@media screen and (max-width: 700px) {
+    #title {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    body {
+        font-size: 0.9rem;
+
+    }
+
+    #main {
+        padding: 0.5rem;
+        padding-top: 1rem;
+    }
+
+    .container-grid {
+        grid-template-columns: repeat(1, 1.5fr);
+    }
+
+    .form-area {
+        order: 2;
+    }
+
+    .image-area {
+        order: 1;
+    }
+
+    .info-blocks {
+        padding-top: 1rem;
+    }
+
+}
